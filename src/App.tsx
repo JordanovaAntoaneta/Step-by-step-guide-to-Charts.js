@@ -5,20 +5,25 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="charts">
+        <img
+          style={{ marginTop: 100 }}
+          src='https://www.chartjs.org/docs/latest/favicon.ico'
+        />
+        <h3>Step-by-step guide to Charts.js</h3>
+        <div style={{ width: 500 }}>
+          <canvas id="dimensions">
+
+          </canvas>
+        </div>
+        <br />
+        <div style={{ width: 800 }}>
+          <canvas id="acquisitions">
+
+          </canvas>
+        </div>
       </header>
+      <script type="module" src="dimensions.js"></script>
     </div>
   );
 }
